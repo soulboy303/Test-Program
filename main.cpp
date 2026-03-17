@@ -31,6 +31,7 @@ if(palindrome){
 }
 else{
     cout << "This string is not a palindrome" << endl;
+    cout << "Error happened at the " << left+1 <<" character" << endl;
 }
 
 }
