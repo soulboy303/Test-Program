@@ -14,10 +14,24 @@ cin >> input;
 
 vector<char> testVector(input.begin(), input.end());
 
-for(int i = 0; i < testVector.size(); i++){
+int left = 0;
+int right = testVector.size()-1;
+bool palindrome = true;
 
-    
+while(left <= right){
 
+
+    if(testVector[left] != testVector[right]){
+        palindrome = false;
+        break;
+    }
+}
+
+if(palindrome){
+    cout << "This string is a palindrome" << endl;
+}
+else{
+    cout << "This string is not a palindrome" << endl;
 }
 
 }
