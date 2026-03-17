@@ -1,7 +1,7 @@
-#include <iostream>;
-#include <string>;
-#include <vector>;
-#include <algorithm>;
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -25,6 +25,8 @@ while(left <= right){
         palindrome = false;
         break;
     }
+    left++;
+    right--;
 }
 
 if(palindrome){
